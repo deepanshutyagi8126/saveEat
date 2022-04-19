@@ -1,0 +1,240 @@
+<app-sidebar></app-sidebar>
+<header>
+  <div class="headerInner">
+    <div class="headerAll headerAll2">
+      <div class="headerTop">
+        <div class="topLeft">
+          <ul>
+            <li>Home /</li>
+            <li><a href="javascript:void(0)">Store Details</a></li>
+          </ul>
+        </div>
+        <div class="topRight">
+          <h2>Admin <span><img src="assets/imgs/profile.svg" alt="profile"></span></h2>
+          <!-- <div class="adminDetail">
+                        <ul>
+                            <li><a href="javascript:void(0)"><span><i class="fa fa-user"></i></span>Profile</a></li>
+                            <li><a href="javascript:void(0)"><span><i class="fa fa-sign-out-alt"></i></span>Logout</a></li>
+                      
+                        </ul>
+                    </div> -->
+        </div>
+      </div>
+      <h2 class="head">Store Details</h2>
+
+    </div>
+  </div>
+</header>
+
+<div class="commonall commonallup">
+  <div class="staticcon restDet">
+    <ul class="bd">
+      <li><a [routerLink]="['/store-personal-info']">Personal Information</a></li>
+      <li class="active"><a [routerLink]="['/store-menu']">Menus</a></li>
+      <li><a [routerLink]="['/store-sell-items']">Sell Items</a></li>
+      <li><a [routerLink]="['/store-order-history']">Order History</a></li>
+      <li><a [routerLink]="['/store-employee']">Employees</a></li>
+      <!-- <li ><a [routerLink]="['/store-payout']">Payouts</a></li> -->
+    </ul>
+    <div class="menuDetails">
+      <h2 class="head">Menus</h2>
+      <div class="tableList">
+        <div class="table-responsive scrollbar2" id="style-4">
+          <table class="table force-overflow2">
+            <thead>
+              <tr>
+                <th>Menu Name</th>
+                <th>Created On</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Menu Monday</td>
+                <td>02/06/2021</td>
+                <td>Active</td>
+                <td><span class="action">
+                    <a data-toggle="modal" data-target="#Store"><img src="assets/imgs/eye.svg" class="eye"
+                        alt="eye"></a>
+                    <a><img class="edit" src="assets/imgs/delete.svg" alt="delete"></a>
+
+                  </span></td>
+              </tr>
+              <tr>
+                <td>Menu Monday</td>
+                <td>02/06/2021</td>
+                <td>Active</td>
+                <td><span class="action">
+                    <a data-toggle="modal" data-target="#Store"><img src="assets/imgs/eye.svg" class="eye"
+                        alt="eye"></a>
+                    <a><img class="edit" src="assets/imgs/delete.svg" alt="delete"></a>
+
+                  </span></td>
+              </tr>
+              <tr>
+                <td>Menu Monday</td>
+                <td>02/06/2021</td>
+                <td>Active</td>
+                <td><span class="action">
+                    <a data-toggle="modal" data-target="#Store"><img src="assets/imgs/eye.svg" class="eye"
+                        alt="eye"></a>
+                    <a><img class="edit" src="assets/imgs/delete.svg" alt="delete"></a>
+
+                  </span></td>
+              </tr>
+              <tr>
+                <td>Menu Monday</td>
+                <td>02/06/2021</td>
+                <td>Active</td>
+                <td><span class="action">
+                    <a data-toggle="modal" data-target="#Store"><img src="assets/imgs/eye.svg" class="eye"
+                        alt="eye"></a>
+                    <a><img class="edit" src="assets/imgs/delete.svg" alt="delete"></a>
+
+                  </span></td>
+              </tr>
+              <tr>
+                <td>Menu Monday</td>
+                <td>02/06/2021</td>
+                <td>Active</td>
+                <td><span class="action">
+                    <a data-toggle="modal" data-target="#Store"><img src="assets/imgs/eye.svg" class="eye"
+                        alt="eye"></a>
+                    <a><img class="edit" src="assets/imgs/delete.svg" alt="delete"></a>
+
+                  </span></td>
+              </tr>
+              <tr>
+                <td>Menu Monday</td>
+                <td>02/06/2021</td>
+                <td>Active</td>
+                <td><span class="action">
+                    <a data-toggle="modal" data-target="#Store"><img src="assets/imgs/eye.svg" class="eye"
+                        alt="eye"></a>
+                    <a><img class="edit" src="assets/imgs/delete.svg" alt="delete"></a>
+
+                  </span></td>
+              </tr>
+              <tr>
+                <td>Menu Monday</td>
+                <td>02/06/2021</td>
+                <td>Active</td>
+                <td><span class="action">
+                    <a data-toggle="modal" data-target="#Store"><img src="assets/imgs/eye.svg" class="eye"
+                        alt="eye"></a>
+                    <a><img class="edit" src="assets/imgs/delete.svg" alt="delete"></a>
+
+                  </span></td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modalBox">
+  <div class="modal fade" id="Store" role="dialog">
+    <div class="modal-dialog max-width95">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+
+        <div class="modal-body">
+          <button type="button" class="close closedds" data-dismiss="modal"><img src="assets/imgs/cl.svg"
+              alt="cl"></button>
+          <div class="excelFlex resFlex">
+            <!-- <h2 class="head">Item Details</h2> -->
+            <a href="javascript:void(0)"><span><i class="fa fa-file-excel"></i></span> Download Excel</a>
+
+          </div>
+          <div class="tableList">
+            <div class="table-responsive scrollbar2" id="style-4">
+              <table class="table force-overflow2">
+                <thead>
+                  <tr>
+                    <th>Item ID</th>
+                    <th>Item Images</th>
+                    <th>Item Name</th>
+                    <th>Item Description</th>
+                    <th>Expire Date</th>
+                    <th>Item (Fixed Price)</th>
+                    <th>Item Sold</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="idcolor">SE09898</span></td>
+                    <td><span class="foodImg"><img src="assets/imgs/food.svg" alt="food"></span></td>
+                    <td>Deepanshu</td>
+                    <td>Reference site about Lorem Ipsum</td>
+
+                    <td>02/09/2021</td>
+                    <td>1,023</td>
+                    <td>1,023</td>
+
+                    <td><span class="pending">pending</span></td>
+                    <td><span class="action">
+                        <a href="javascript:void(0)" class="switchUp">
+                          <input class="switch" type="checkbox" />
+                        </a>
+                      </span></td>
+
+                  </tr>
+                  <tr>
+                    <td><span class="idcolor">SE09898</span></td>
+                    <td><span class="foodImg"><img src="assets/imgs/food.svg" alt="food"></span></td>
+                    <td>Deepanshu</td>
+                    <td>Reference site about Lorem Ipsum</td>
+
+                    <td>02/09/2021</td>
+                    <td>1,023</td>
+                    <td>1,023</td>
+
+                    <td><span class="pending">pending</span></td>
+                    <td><span class="action">
+                        <a href="javascript:void(0)" class="switchUp">
+                          <input class="switch" type="checkbox" />
+                        </a>
+                      </span></td>
+                  </tr>
+                  <tr>
+                    <td><span class="idcolor">SE09898</span></td>
+                    <td><span class="foodImg"><img src="assets/imgs/food.svg" alt="food"></span></td>
+                    <td>Deepanshu</td>
+                    <td>Reference site about Lorem Ipsum</td>
+
+                    <td>02/09/2021</td>
+                    <td>1,023</td>
+
+                    <td>1,023</td>
+                    <td><span class="pending">pending</span></td>
+                    <td><span class="action">
+                        <a href="javascript:void(0)" class="switchUp">
+                          <input class="switch" type="checkbox" />
+                        </a>
+                      </span></td>
+                  </tr>
+
+
+
+
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</div>

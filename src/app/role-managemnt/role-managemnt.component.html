@@ -1,0 +1,144 @@
+<app-sidebar></app-sidebar>
+<header>
+    <div class="headerInner">
+        <div class="headerAll">
+            <div class="headerTop">
+                <div class="topLeft">
+                    <ul>
+                        <li>Home /</li>
+                        <li  [routerLink]='["/users"]' style="cursor: pointer;">Users /</li>
+                        <li><a href="javascript:void(0)">Role Management</a></li>
+                    </ul>
+                </div>
+                <div class="topRight">
+                    <h2>Admin <span><img src="assets/imgs/profile.svg" alt="profile"></span></h2>
+                    <!-- <div class="adminDetail">
+                        <ul>
+                            <li><a href="javascript:void(0)"><span><i class="fa fa-user"></i></span>Profile</a></li>
+                            <li><a href="javascript:void(0)"><span><i class="fa fa-sign-out-alt"></i></span>Logout</a></li>
+                      
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+            <h2 class="head">Role Management</h2>
+            <div class="allsearch alignCenter">
+                <div class="row ">
+                    <div class="col-sm-3">
+                        <div class="searchLeft">
+                            <div class="form-group Relative">
+                                <span class="se"><img src="assets/imgs/search.svg" alt="search"></span>
+                                <input type="text" class="form-control formControl pd-38" placeholder="Search  ">
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- <div class="col-sm-1"></div> -->
+                    <div class="col-sm-9">
+                        <div class="row">
+                            <!-- <div class="col-sm-3"></div>   -->
+                            <div class="col-sm-2">
+                                <div class="selecter">
+                                    <select class="form-control formControl">
+                                        <option>From Date</option>
+
+                                    </select>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="selecter">
+                                    <select class="form-control formControl">
+                                        <option>To Date</option>
+
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-5">
+                                <ul class="radioAl">
+                                    <li>
+                                        <div class="form-group">
+                                            <input type="radio" name="data" id="today" checked>
+                                            <label for="today">Today</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-group">
+                                            <input type="radio" name="data" id="Week">
+                                            <label for="Week">This Week</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-group">
+                                            <input type="radio" name="data" id="Month">
+                                            <label for="Month">This Month</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-3"><a [routerLink]='["/add-role"]' class="btns addnew">+ Role</a></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="commonall">
+   
+    <div class="tableList">
+        <div class="table-responsive scrollbar2" id="style-4">
+            <table class="table force-overflow2">
+                <thead>
+                    <tr>
+                        <th>Role id</th>
+                        <th>Role title</th>
+                        <th>Description</th>
+                        <th>Created on</th>
+                         <th>Number of Staff</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SE065132</td>
+                        <td>Store Manager</td>
+                
+                 
+                        <td>At vero eos et accusamus et iusto odio dignissimos ducimus qui.</td>
+                        <td>25 July 2021</td>
+                        <td>10</td>
+                        <td><span class="action">
+                               
+                                <a><img src="assets/imgs/delete.svg" class="edit" alt="delete"></a>
+                                <a href="javascript:void(0)" class="switchUp">
+                                    <input class="switch" type="checkbox" />
+                                </a>
+                            </span></td>
+                    </tr>
+           
+                </tbody>
+            </table>
+        </div>
+        <div class="paginations">
+            <div class="paginationLeft">
+                <h2></h2>
+            </div>
+            <div class="paginationRight">
+                <ul>
+                    <li><a href="javascript:void(0)"><img src="assets/imgs/l.svg" alt="arrowleft"></a></li>
+                    <li><a href="javascript:void(0)"><img src="assets/imgs/arrowleft.svg" alt="arrowleft"></a></li>
+                    <li><a href="javascript:void(0)">1</a></li>
+                    <li><a href="javascript:void(0)">2</a></li>
+                    <li><a href="javascript:void(0)">3</a></li>
+                    <li><a href="javascript:void(0)">4</a></li>
+                    <li><a href="javascript:void(0)"><img src="assets/imgs/arrowright.svg" alt="arrowright"></a></li>
+                    <li><a href="javascript:void(0)"><img src="assets/imgs/r.svg" alt="arrowleft"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

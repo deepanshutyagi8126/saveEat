@@ -1,0 +1,93 @@
+<app-sidebar></app-sidebar>
+<header>
+  <div class="headerInner">
+    <div class="headerAll headerAll2">
+      <div class="headerTop">
+        <div class="topLeft">
+          <ul>
+            <li>Home /</li>
+            <li><a href="javascript:void(0)">Restaurants</a></li>
+          </ul>
+        </div>
+        <div class="topRight">
+          <h2>Admin <span><img src="assets/imgs/profile.svg" alt="profile"></span></h2>
+          <!-- <div class="adminDetail">
+                        <ul>
+                            <li><a href="javascript:void(0)"><span><i class="fa fa-user"></i></span>Profile</a></li>
+                            <li><a href="javascript:void(0)"><span><i class="fa fa-sign-out-alt"></i></span>Logout</a></li>
+                      
+                        </ul>
+                    </div> -->
+        </div>
+      </div>
+      <h2 class="head">Restaurant Details</h2>
+     
+    </div>
+  </div>
+</header>
+
+<div class="commonall commonallup">
+  <div class="staticcon ">
+    <ul class="bd">
+      <li><a [routerLink]="['/restaurants-personal-information']">Personal Information</a></li>
+      <li><a [routerLink]="['/restaurants-menus']">Menus</a></li>
+      <li class="active"><a [routerLink]="['/restaurants-sell-items']">Sell Items</a></li>
+      <li><a [routerLink]="['/restaurants-order-history']">Order History</a></li>
+      <li><a [routerLink]="['/restaurants-employees']">Employees</a></li>
+      <!-- <li><a [routerLink]="['/restaurants-payout']">Payouts</a></li> -->
+    </ul>
+    <div class="menuDetails">
+      <h2 class="head">Items Details</h2>
+      <div class="tableList">
+        <div class="table-responsive scrollbar2" id="style-4">
+          <table class="table force-overflow2">
+            <thead>
+              <tr>
+                <th>Item ID</th>
+                <th>Item Images</th>
+                <th>Item Name</th>
+                <th>Item Description</th>
+                <th>Selling Date & Time</th>
+                <th>Expiry Date & Time</th>
+                <th>Quantity</th>
+                <th>Item (Fixed Price)</th>
+                <th>Item (Discount)</th>
+                <th>Discount %</th>
+              
+                <!-- <th style="min-width: 110px;">Time</th> -->
+                <th>Pick up allowance</th>
+               
+             
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>SE0989</td>
+                <td><span class="foodImg"><img src="assets/imgs/food.svg" alt="food"></span></td>
+                <td>Deepanshu</td>
+                <td>Reference site about Lorem Ipsum</td>
+                <td>02/06/2021 <span class="times">,02:30 p.m</span> </td>
+                <td>02/06/2021 <span class="times">,02:30 p.m</span> </td>
+                <td>10</td>
+                <td>1,023</td>
+                <td>1,023</td>
+                <td>5%</td>
+                <td>02/06/2021 <span class="times">,02:30 p.m</span> </td>
+               
+                <td><span class="action">
+                  <a href="javascript:void(0)" class="switchUp">
+                      <input class="switch" type="checkbox" />
+                  </a>
+              </span></td>
+            
+              </tr>
+          
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

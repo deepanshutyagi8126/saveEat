@@ -1,0 +1,661 @@
+<app-sidebar></app-sidebar>
+<header>
+  <div class="headerInner">
+    <div class="headerAll headerAll2">
+      <div class="headerTop">
+        <div class="topLeft">
+          <ul>
+            <li>Home /</li>
+            <li [routerLink]="['/customers']" style="cursor: pointer;">Customers /</li>
+            <li><a href="javascript:void(0)">Details</a></li>
+          </ul>
+        </div>
+        <div class="topRight">
+          <h2>Admin <span><img src="assets/imgs/profile.svg" alt="profile"></span></h2>
+          <!-- <div class="adminDetail">
+                        <ul>
+                            <li><a href="javascript:void(0)"><span><i class="fa fa-user"></i></span>Profile</a></li>
+                            <li><a href="javascript:void(0)"><span><i class="fa fa-sign-out-alt"></i></span>Logout</a></li>
+                      
+                        </ul>
+                    </div> -->
+        </div>
+      </div>
+      <h2 class="head">Customer Details</h2>
+
+    </div>
+  </div>
+</header>
+
+<div class="commonall commonallup">
+  <div class="customersDetails">
+
+
+    <div class="customerProfile">
+      <div class="profileImg">
+        <img src="assets/imgs/profile.png" alt="profile">
+      </div>
+      <div class="aboutProfile">
+        <h2>Deepanshu Tyagi</h2>
+        <p><span style="padding-right: 6px;"><img src="assets/imgs/location.svg" alt="location"></span> Noida, India</p>
+      </div>
+      <div class="UnusedCredits">
+        <a href="javascript:void(0)" data-toggle="modal" data-target="#credit">
+          <h2>Unused Credits</h2>
+          <h3>1000</h3>
+        </a>
+
+      </div>
+      <div class="badges">
+        <h2>Badges</h2>
+        <ul>
+          <li>
+            <div class="bagesImg">
+              <img src="assets/imgs/bages1.svg" alt="badges">
+            </div>
+            <div class="bagesCon">
+              <h2>Food Lover</h2>
+              <p>25/05/2021</p>
+            </div>
+          </li>
+          <li>
+            <div class="bagesImg">
+              <img src="assets/imgs/bages2.svg" alt="badges">
+            </div>
+            <div class="bagesCon">
+              <h2>Carbon Capturer</h2>
+              <p>25/05/2021</p>
+            </div>
+          </li>
+          <li>
+            <div class="bagesImg">
+              <img src="assets/imgs/bages3.svg" alt="badges">
+            </div>
+            <div class="bagesCon">
+              <h2>Tree Lover</h2>
+              <p>25/05/2021</p>
+            </div>
+          </li>
+          <li>
+            <div class="bagesImg">
+              <img src="assets/imgs/bages4.svg" alt="badges">
+            </div>
+            <div class="bagesCon">
+              <h2>CO2minator</h2>
+              <p>25/05/2021</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="customerAlright">
+      <div class="customerRight">
+        <div class="scrollbar2" id="style-4" style=" margin-bottom: 15px;">
+          <div class=" flexWrap force-overflow2">
+            <ul>
+              <li>
+                <div class="saved">
+                  <div class="savedCon">
+                    <h2>Amount Spent</h2>
+                    <p>25,432</p>
+                  </div>
+                  <div class="savedImg" style="position: relative;">
+                    <span class="rupee">
+                      <img src="assets/imgs/rupee2.svg" alt="saved">
+                    </span>
+                    <img src="assets/imgs/rupee.svg" alt="saved">
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="saved">
+                  <div class="savedCon">
+                    <h2>Amount Saved</h2>
+                    <p>25,432</p>
+                  </div>
+                  <div class="savedImg" style="position: relative;">
+                    <span class="rupee">
+                      <img src="assets/imgs/rupee2.svg" alt="saved">
+                    </span>
+                    <img src="assets/imgs/rupee.svg" alt="saved">
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="saved">
+                  <div class="savedCon">
+                    <h2>Total CO2 Saving</h2>
+                    <p>23.5 Kg</p>
+                  </div>
+                  <div class="savedImg">
+                    <img src="assets/imgs/saved1.svg" alt="saved">
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="saved">
+                  <div class="savedCon">
+                    <h2>Rescued No. of Items</h2>
+                    <p>23</p>
+                  </div>
+                  <div class="savedImg">
+                    <img src="assets/imgs/saved2.svg" alt="saved">
+                  </div>
+                </div>
+              </li>
+
+
+              <li>
+                <div class="saved">
+                  <div class="savedCon">
+                    <h2>Food Saved</h2>
+                    <p>2.5 Kg</p>
+                  </div>
+                  <div class="savedImg">
+                    <img src="assets/imgs/saved2.svg" alt="saved">
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="profileBox">
+          <ul>
+            <li>
+              <h2>Profile Details</h2>
+              <div class="prfileDE">
+                <span>
+                  <h5><b><img src="assets/imgs/customer.svg" alt="customer"></b>Customer ID</h5>
+                  <p><span class="idcolor" [routerLink]="['/customers']"
+                      style="cursor: pointer;padding: 0;">SE065132</span></p>
+                </span>
+                <span>
+                  <h5><b><img src="assets/imgs/phone.svg" alt="customer"></b>Mobile Number</h5>
+                  <p>8126362520</p>
+                </span>
+                <span>
+                  <h5><b><img src="assets/imgs/email.svg" alt="customer"></b>Email</h5>
+                  <p>deepanshu@gmail.com</p>
+                </span>
+                <span>
+                  <h5><b><img src="assets/imgs/since.svg" alt="customer"></b>Since</h5>
+                  <p>25-Aug-2021</p>
+                </span>
+                <span>
+                  <h5><b><img src="assets/imgs/status.svg" alt="customer"></b>Status</h5>
+                  <p class="colorGreen">Active</p>
+                </span>
+              </div>
+            </li>
+            <li>
+              <h2>Order Details</h2>
+              <div class="prfileDE">
+                <span>
+                  <h5><b><img src="assets/imgs/num.svg" alt="customer"></b>Number of Orders</h5>
+                  <p>11530</p>
+                </span>
+                <span>
+                  <h5><b><img src="assets/imgs/num.svg" alt="customer"></b>Completed Order</h5>
+                  <p>1000</p>
+                </span>
+                <span>
+                  <h5><b><img src="assets/imgs/num.svg" alt="customer"></b>Cancelled Order</h5>
+                  <p>10</p>
+                </span>
+                <span>
+                  <h5><b><img src="assets/imgs/num.svg" alt="customer"></b>Last Order Date</h5>
+                  <p>1000</p>
+                </span>
+
+              </div>
+            </li>
+            <li>
+              <h2>Rewards Details</h2>
+              <div class="prfileDE prfileDE2">
+                <span>
+                  <img src="assets/imgs/tree.svg" class="tree" alt="tree">
+                  <h5>Plant a tree</h5>
+                  <p>25/05/2021</p>
+                </span>
+                <span>
+                  <img src="assets/imgs/tree2.svg" class="tree" alt="tree">
+                  <h5>25% off your next order</h5>
+                  <p>25/05/2021</p>
+                </span>
+                <span>
+                  <img src="assets/imgs/tree3.svg" class="tree" alt="tree">
+                  <h5>Receive 25 kr credit</h5>
+                  <p>25/05/2021</p>
+                </span>
+
+
+              </div>
+            </li>
+            <li>
+
+              <div class="prfileDE prfileDE2">
+
+                <span class="star">
+                  <h2>Star Status</h2>
+                  <img src="assets/imgs/star.svg" class="tree" alt="star">
+                  <h5>1 Star</h5>
+
+                </span>
+                <span class="star">
+                  <h2>Avg. Rating by Customer</h2>
+                  <img src="assets/imgs/star.svg" class="tree" alt="star">
+                  <h5>1 Star</h5>
+
+                </span>
+
+
+
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="customerTable">
+    <h2 class="head">Customer History</h2>
+    <div class="allsearch">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="searchLeft">
+            <div class="form-group Relative">
+              <span class="se"><img src="assets/imgs/search.svg" alt="search"></span>
+              <input type="text" class="form-control formControl pd-38" placeholder="Search ">
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-sm-1"></div> -->
+        <div class="col-sm-9">
+          <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3">
+              <div class="selecter">
+                <select class="form-control formControl">
+                  <option>From Date</option>
+                  <option>10 july 2021</option>
+                  <option>11 july 2021</option>
+                  <option>12 july 2021</option>
+                  <option>13 july 2021</option>
+                  <option>14 july 2021</option>
+                  <option>15 july 2021</option>
+                  <option>16 july 2021</option>
+                  <option>17 july 2021</option>
+                  <option>18 july 2021</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="selecter">
+                <select class="form-control formControl">
+                  <option>To Date</option>
+                  <option>15 july 2021</option>
+                  <option>16 july 2021</option>
+                  <option>18 july 2021</option>
+                  <option>19 july 2021</option>
+                  <option>20 july 2021</option>
+                  <option>21 july 2021</option>
+                  <option>22 july 2021</option>
+                  <option>23 july 2021</option>
+                  <option>24 july 2021</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-5">
+              <ul class="radioAl">
+                <li>
+                  <div class="form-group">
+                    <input type="radio" name="data" id="today" checked>
+                    <label for="today">Today</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="form-group">
+                    <input type="radio" name="data" id="Week">
+                    <label for="Week">This Week</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="form-group">
+                    <input type="radio" name="data" id="Month">
+                    <label for="Month">This Month</label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="paymentSlecter">
+        <div class="selecter">
+          <select class="form-control formControl">
+            <option>Payment Method</option>
+            <option>Paytm</option>
+            <option>Cash</option>
+            <option>Credit</option>
+
+          </select>
+
+        </div>
+        <div class="selecter">
+          <select class="form-control formControl">
+            <option>Order Status</option>
+            <option>Reject</option>
+            <option>Pending</option>
+            <option>Accepted</option>
+
+          </select>
+
+        </div>
+        <div class="selecter">
+          <select class="form-control formControl">
+            <option>Refund Status</option>
+            <option>Refund Proceed</option>
+            <option>Refunded</option>
+
+          </select>
+
+        </div>
+      </div>
+
+      <div class="tableList">
+        <div class="table-responsive scrollbar2" id="style-4">
+          <table class="table force-overflow2">
+            <thead>
+              <tr>
+                <th>Order Date</th>
+                <th>Order ID</th>
+                <th>Restaurant ID</th>
+                <th>Restaurant Name</th>
+                <th>Payment Method</th>
+                <th>Amount</th>
+                <th>Order Status</th>
+                <th>Refund Status</th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>25/06/2021</td>
+                <td><span class="idcolor pointer" [routerLink]="['/order-details']">SE065132</span></td>
+                <td><span class="idcolor" [routerLink]="['/restaurants-personal-information']"
+                    style="cursor: pointer;">SE065132</span></td>
+
+                <td>Dominos</td>
+                <td>Cash</td>
+                <td>1,050</td>
+                <td><span class="pending">pending</span></td>
+                <td><span class="Accepted">Refund Proceed</span></td>
+
+              </tr>
+              <tr>
+                <td>25/06/2021</td>
+                <td><span class="idcolor pointer" [routerLink]="['/order-details']">SE065132</span></td>
+                <td><span class="idcolor" [routerLink]="['/restaurants-personal-information']"
+                    style="cursor: pointer;">SE065132</span></td>
+
+                <td>Dominos</td>
+                <td>Cash</td>
+                <td>1,050</td>
+                <td><span class="Accepted">Accepted</span></td>
+                <td>N/A</td>
+
+              </tr>
+              <tr>
+                <td>25/06/2021</td>
+                <td><span class="idcolor pointer" [routerLink]="['/orders']">SE065132</span></td>
+                <td><span class="idcolor" [routerLink]="['/restaurants']" style="cursor: pointer;">SE065132</span></td>
+
+                <td>Dominos</td>
+                <td>Cash</td>
+                <td>1,050</td>
+                <td><span class="pending">pending</span></td>
+                <td>N/A</td>
+
+              </tr>
+              <tr>
+                <td>25/06/2021</td>
+                <td><span class="idcolor pointer" [routerLink]="['/order-details']">SE065132</span></td>
+                <td><span class="idcolor" [routerLink]="['/restaurants-personal-information']"
+                    style="cursor: pointer;">SE065132</span></td>
+
+                <td>Dominos</td>
+                <td>Cash</td>
+                <td>1,050</td>
+                <td><span class="Accepted">Accepted</span></td>
+                <td><span class="Accepted">Refund Proceed</span></td>
+
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="paginations">
+          <div class="paginationLeft">
+            <h2>Total Orders : <span>354865</span></h2>
+          </div>
+          <div class="paginationRight">
+            <ul>
+              <li><a href="javascript:void(0)"><img src="assets/imgs/l.svg" alt="arrowleft"></a></li>
+              <li><a href="javascript:void(0)"><img src="assets/imgs/arrowleft.svg" alt="arrowleft"></a></li>
+              <li><a href="javascript:void(0)">1</a></li>
+              <li><a href="javascript:void(0)">2</a></li>
+              <li><a href="javascript:void(0)">3</a></li>
+              <li><a href="javascript:void(0)">4</a></li>
+              <li><a href="javascript:void(0)"><img src="assets/imgs/arrowright.svg" alt="arrowright"></a></li>
+              <li><a href="javascript:void(0)"><img src="assets/imgs/r.svg" alt="arrowleft"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="customerTable" style="padding-top: 0;">
+    <h2 class="head">Complain History</h2>
+    <div class="allsearch">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="searchLeft">
+            <div class="form-group Relative">
+              <span class="se"><img src="assets/imgs/search.svg" alt="search"></span>
+              <input type="text" class="form-control formControl pd-38" placeholder="Search ">
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-sm-1"></div> -->
+        <div class="col-sm-9">
+          <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3">
+              <div class="selecter">
+                <select class="form-control formControl">
+                  <option>From Date</option>
+
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="selecter">
+                <select class="form-control formControl">
+                  <option>To Date</option>
+
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-5">
+              <ul class="radioAl">
+                <li>
+                  <div class="form-group">
+                    <input type="radio" name="data" id="today" checked>
+                    <label for="today">Today</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="form-group">
+                    <input type="radio" name="data" id="Week">
+                    <label for="Week">This Week</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="form-group">
+                    <input type="radio" name="data" id="Month">
+                    <label for="Month">This Month</label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="tableList">
+        <div class="table-responsive scrollbar2" id="style-4">
+          <table class="table force-overflow2">
+            <thead>
+              <tr>
+                <th>Complain ID</th>
+                <th>Complain Date & Time</th>
+                <th>Order ID</th>
+                <th>Restaurant Id</th>
+                <th>Restaurant Name</th>
+                <th>Payment Method</th>
+                <th>Amount</th>
+                <th>Complain Status</th>
+<th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>>SE065132</td>
+                <td>25/06/2021</td>
+                <td><span class="idcolor pointer" [routerLink]="['/order-details']">SE065132</span></td>
+                <td><span class="idcolor" [routerLink]="['/restaurants-personal-information']"
+                    style="cursor: pointer;">SE065132</span></td>
+
+                <td>Dominos</td>
+                <td>Cash</td>
+                <td>1,050</td>
+                <td><span class="pending">pending</span></td>
+<td>                 <a [routerLink]="['/complain-details']"><img src="assets/imgs/eye.svg" class="eye" alt="eye"></a>
+</td>
+              </tr>
+       
+            </tbody>
+          </table>
+        </div>
+        <div class="paginations">
+          <div class="paginationLeft">
+            <h2>Total complain : <span>354865</span></h2>
+          </div>
+          <div class="paginationRight">
+            <ul>
+              <li><a href="javascript:void(0)"><img src="assets/imgs/l.svg" alt="arrowleft"></a></li>
+              <li><a href="javascript:void(0)"><img src="assets/imgs/arrowleft.svg" alt="arrowleft"></a></li>
+              <li><a href="javascript:void(0)">1</a></li>
+              <li><a href="javascript:void(0)">2</a></li>
+              <li><a href="javascript:void(0)">3</a></li>
+              <li><a href="javascript:void(0)">4</a></li>
+              <li><a href="javascript:void(0)"><img src="assets/imgs/arrowright.svg" alt="arrowright"></a></li>
+              <li><a href="javascript:void(0)"><img src="assets/imgs/r.svg" alt="arrowleft"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modalBox">
+    <div class="modal fade" id="credit" role="dialog">
+      <div class="modal-dialog max-width95">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+
+          <div class="modal-body">
+            <button type="button" class="close closedds" data-dismiss="modal"><img src="assets/imgs/cl.svg"
+                alt="cl"></button>
+            <div class="excelFlex resFlex" style="justify-content: space-between;">
+               <h2 class="head">Unused Credits</h2>
+              <a href="javascript:void(0)"><span><i class="fa fa-file-excel"></i></span> Download Excel</a>
+
+            </div>
+            <div class="tableList">
+              <div class="table-responsive scrollbar2" id="style-4">
+                <table class="table force-overflow2">
+                  <thead>
+                    <tr>
+                      <th>Credit ID</th>
+                      <th>Credit Issue <br> Date & Time</th>
+                      <th>Credit Type</th>
+                      <th>Credit Amount</th>
+                      <th>Credit Title</th>
+                      <th>Credit Frequency</th>
+                      <th>Credit Description</th>
+                      <th>Credit Durations</th>
+                      <th>Credit Code</th>
+                      <th>Reward ID</th>
+                      <th>Order ID</th>
+                      <th>Customer ID</th>
+                      <th>Customer Name</th>
+                      <th>Contact Email</th>
+                      <th>Contact Number</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+
+
+                    <tr>
+                      <td> SE065132</td>
+                      <td>23/07/2021</td>
+                      <td>Reward Credit</td>
+                      <td>1020</td>
+                      <td>Get Offer </td>
+                      <td>1020</td>
+                      <td>Lorem Ipsum</td>
+                      <td>1 week</td>
+                      <td>SE065132</td>
+                      <td>SE065132</td>
+                      <td data-dismiss="modal"><span class="idcolor pointer" [routerLink]="['/order-details']">SE065132</span></td>
+                      <td data-dismiss="modal"><span class="idcolor" [routerLink]="['/customers-details']"
+                          style="cursor: pointer;">SE065132</span></td>
+                      <td>Deepanshu</td>
+                      <td>deepanshu@gmail.com</td>
+                      <td>8126362520</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="paginations">
+                <div class="paginationLeft">
+                  <h2></h2>
+                </div>
+                <div class="paginationRight">
+                  <ul>
+                    <li><a href="javascript:void(0)"><img src="assets/imgs/l.svg" alt="arrowleft"></a></li>
+                    <li><a href="javascript:void(0)"><img src="assets/imgs/arrowleft.svg" alt="arrowleft"></a></li>
+                    <li><a href="javascript:void(0)">1</a></li>
+                    <li><a href="javascript:void(0)">2</a></li>
+                    <li><a href="javascript:void(0)">3</a></li>
+                    <li><a href="javascript:void(0)">4</a></li>
+                    <li><a href="javascript:void(0)"><img src="assets/imgs/arrowright.svg" alt="arrowright"></a></li>
+                    <li><a href="javascript:void(0)"><img src="assets/imgs/r.svg" alt="arrowleft"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>

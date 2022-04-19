@@ -1,0 +1,69 @@
+<app-sidebar></app-sidebar>
+<header>
+  <div class="headerInner">
+    <div class="headerAll headerAll2">
+      <div class="headerTop">
+        <div class="topLeft">
+          <ul>
+            <li>Home /</li>
+            <li  [routerLink]='["/users"]' style="cursor: pointer;">Users /</li>
+            <li><a href="javascript:void(0)">Add Users</a></li>
+          </ul>
+        </div>
+        <div class="topRight">
+          <h2>Admin <span><img src="assets/imgs/profile.svg" alt="profile"></span></h2>
+          <!-- <div class="adminDetail">
+                        <ul>
+                            <li><a href="javascript:void
+                              (0)"><span><i class="fa fa-user"></i></span>Profile</a></li>
+                            <li><a href="javascript:void(0)"><span><i class="fa fa-sign-out-alt"></i></span>Logout</a></li>
+                      
+                        </ul>
+                    </div> -->
+        </div>
+      </div>
+      <h2 class="head">Users</h2>
+
+    </div>
+  </div>
+</header>
+
+<div class="commonall commonallup">
+<div class="Credit">
+    <h2 class="head2">Add Users</h2>
+    <div class="row" style="padding-top: 15px;">
+        <div class="col-sm-6 ">
+            <form action="">
+        
+                <div class="form-group">
+                    <label for="" class="label">Enter name</label>
+                    <input type="text" class="form-control formControl border" placeholder="Enter name">
+                </div>
+                <div class="form-group">
+                    <label for="" class="label">Contact number</label>
+                    <input type="text" class="form-control formControl border" placeholder="Contact number">
+                </div>
+                <div class="form-group">
+                  <label for="" class="label">Email Id</label>
+                  <input type="text" class="form-control formControl border" placeholder="Email Id">
+              </div>
+              <div class="form-group Relative">
+                <span class="pass"><i class="fa fa-eye-slash"></i></span>
+                <label for="" class="label forg">Password</label>
+                <input type="password" placeholder="Password" class="form-control formControl passwordAl">
+            </div>
+                <div class="form-group">
+                    <label for="" class="label">Assign Role </label>
+                   <select class="form-control formControl">
+                       <option value="">Assign Role </option>
+                   </select>
+                </div>
+             <div class="form-group sbtn">
+                 <button class="btns">Submit</button>
+             </div>
+            </form>
+        </div>
+         
+    </div>
+</div>
+    </div>

@@ -1,0 +1,294 @@
+<app-sidebar></app-sidebar>
+<header>
+    <div class="headerInner">
+        <div class="headerAll">
+            <div class="headerTop">
+                <div class="topLeft">
+                    <ul>
+                        <li>Home /</li>
+                        <li><a href="javascript:void(0)">Rewards</a></li>
+                    </ul>
+                </div>
+                <div class="topRight">
+                    <h2>Admin <span><img src="assets/imgs/profile.svg" alt="profile"></span></h2>
+                    <!-- <div class="adminDetail">
+                        <ul>
+                            <li><a href="javascript:void(0)"><span><i class="fa fa-user"></i></span>Profile</a></li>
+                            <li><a href="javascript:void(0)"><span><i class="fa fa-sign-out-alt"></i></span>Logout</a></li>
+                      
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+            <h2 class="head">Rewards</h2>
+            <div class="allsearch alignCenter">
+          <div class="row ">
+              <div class="col-sm-3">
+                <div class="searchLeft">
+                    <div class="form-group Relative">
+                        <span class="se"><img src="assets/imgs/search.svg" alt="search"></span>
+                        <input type="text" class="form-control formControl pd-38" placeholder="Search ">
+                    </div>
+                </div>
+              </div>
+              <!-- <div class="col-sm-1"></div> -->
+              <div class="col-sm-9">
+                  <div class="row">
+                      <div class="col-sm-1"></div>
+                      <div class="col-sm-3">
+                          <div class="selecter">
+                              <select class="form-control formControl">
+                                  <option >From Date</option>
+                              
+                              </select>
+                          </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="selecter">
+                            <select class="form-control formControl">
+                                <option >To Date</option>
+                         
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <ul class="radioAl">
+                            <li>
+                                <div class="form-group">
+                                    <input type="radio" name="data" id="today" checked>
+                                    <label for="today">Today</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group">
+                                    <input type="radio" name="data" id="Week">
+                                    <label for="Week">This Week</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group">
+                                    <input type="radio" name="data" id="Month">
+                                    <label for="Month">This Month</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
+              </div>
+          </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="commonall">
+<div class="tableList">
+    <div class="table-responsive scrollbar2" id="style-4">          
+        <table class="table force-overflow2">
+          <thead>
+            <tr>
+              <th>Customer ID</th>
+              <th>Name</th>
+              <th>Contact Email</th>
+              <th>Contact Number</th>
+              <th>Customer Since</th>
+              <th>Currents Star Status</th>
+              <th>No. of Reward Claimed</th>
+              <th>Last Reward <br> Claimed Date</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                   <td><span class="idcolor" [routerLink]="['/customers-details']" style="cursor: pointer;">SE065132</span></td>
+
+              <td>Deepanshu Tyagi</td>
+              <td>Deepanshu@gmail.com</td>
+              <td>8126362520</td>
+              <td>25/06/2021</td>
+              <td>4.5 star</td>
+              <td>1,050</td>
+              <td>02/06/2021</td>
+
+              <td><span class="action">
+                   <a [routerLink]="['/reward-history']"><img src="assets/imgs/eye.svg" class="eye" alt="eye"></a>
+                
+            
+              </span></td>
+            </tr>
+            <tr>
+                     <td><span class="idcolor" [routerLink]="['/customers-details']" style="cursor: pointer;">SE065132</span></td>
+
+                <td>Deepanshu Tyagi</td>
+                <td>Deepanshu@gmail.com</td>
+                <td>8126362520</td>
+                <td>25/06/2021</td>
+                <td>4.5 star</td>
+                <td>1,050</td>
+                <td>02/06/2021</td>
+  
+                <td><span class="action">
+                     <a [routerLink]="['/reward-history']"><img src="assets/imgs/eye.svg" class="eye" alt="eye"></a>
+                  
+              
+                </span></td>
+              </tr>
+              <tr>
+                     <td><span class="idcolor" [routerLink]="['/customers-details']" style="cursor: pointer;">SE065132</span></td>
+
+                <td>Deepanshu Tyagi</td>
+                <td>Deepanshu@gmail.com</td>
+                <td>8126362520</td>
+                <td>25/06/2021</td>
+                <td>4.5 star</td>
+                <td>1,050</td>
+                <td>02/06/2021</td>
+  
+                <td><span class="action">
+                     <a [routerLink]="['/reward-history']"><img src="assets/imgs/eye.svg" class="eye" alt="eye"></a>
+                  
+              
+                </span></td>
+              </tr>
+              <tr>
+                     <td><span class="idcolor" [routerLink]="['/customers-details']" style="cursor: pointer;">SE065132</span></td>
+
+                <td>Deepanshu Tyagi</td>
+                <td>Deepanshu@gmail.com</td>
+                <td>8126362520</td>
+                <td>25/06/2021</td>
+                <td>4.5 star</td>
+                <td>1,050</td>
+                <td>02/06/2021</td>
+  
+                <td><span class="action">
+                     <a [routerLink]="['/reward-history']"><img src="assets/imgs/eye.svg" class="eye" alt="eye"></a>
+                  
+              
+                </span></td>
+              </tr>
+              <tr>
+                     <td><span class="idcolor" [routerLink]="['/customers-details']" style="cursor: pointer;">SE065132</span></td>
+
+                <td>Deepanshu Tyagi</td>
+                <td>Deepanshu@gmail.com</td>
+                <td>8126362520</td>
+                <td>25/06/2021</td>
+                <td>4.5 star</td>
+                <td>1,050</td>
+                <td>02/06/2021</td>
+  
+                <td><span class="action">
+                     <a [routerLink]="['/reward-history']"><img src="assets/imgs/eye.svg" class="eye" alt="eye"></a>
+                  
+              
+                </span></td>
+              </tr>
+              <tr>
+                     <td><span class="idcolor" [routerLink]="['/customers-details']" style="cursor: pointer;">SE065132</span></td>
+
+                <td>Deepanshu Tyagi</td>
+                <td>Deepanshu@gmail.com</td>
+                <td>8126362520</td>
+                <td>25/06/2021</td>
+                <td>4.5 star</td>
+                <td>1,050</td>
+                <td>02/06/2021</td>
+  
+                <td><span class="action">
+                     <a [routerLink]="['/reward-history']"><img src="assets/imgs/eye.svg" class="eye" alt="eye"></a>
+                  
+              
+                </span></td>
+              </tr>
+              <tr>
+                     <td><span class="idcolor" [routerLink]="['/customers-details']" style="cursor: pointer;">SE065132</span></td>
+
+                <td>Deepanshu Tyagi</td>
+                <td>Deepanshu@gmail.com</td>
+                <td>8126362520</td>
+                <td>25/06/2021</td>
+                <td>4.5 star</td>
+                <td>1,050</td>
+                <td>02/06/2021</td>
+  
+                <td><span class="action">
+                     <a [routerLink]="['/reward-history']"><img src="assets/imgs/eye.svg" class="eye" alt="eye"></a>
+                  
+              
+                </span></td>
+              </tr>
+              <tr>
+                     <td><span class="idcolor" [routerLink]="['/customers-details']" style="cursor: pointer;">SE065132</span></td>
+
+                <td>Deepanshu Tyagi</td>
+                <td>Deepanshu@gmail.com</td>
+                <td>8126362520</td>
+                <td>25/06/2021</td>
+                <td>4.5 star</td>
+                <td>1,050</td>
+                <td>02/06/2021</td>
+  
+                <td><span class="action">
+                     <a [routerLink]="['/reward-history']"><img src="assets/imgs/eye.svg" class="eye" alt="eye"></a>
+                  
+              
+                </span></td>
+              </tr>
+              <tr>
+                     <td><span class="idcolor" [routerLink]="['/customers-details']" style="cursor: pointer;">SE065132</span></td>
+
+                <td>Deepanshu Tyagi</td>
+                <td>Deepanshu@gmail.com</td>
+                <td>8126362520</td>
+                <td>25/06/2021</td>
+                <td>4.5 star</td>
+                <td>1,050</td>
+                <td>02/06/2021</td>
+  
+                <td><span class="action">
+                     <a [routerLink]="['/reward-history']"><img src="assets/imgs/eye.svg" class="eye" alt="eye"></a>
+                  
+              
+                </span></td>
+              </tr>
+              <tr>
+                     <td><span class="idcolor" [routerLink]="['/customers-details']" style="cursor: pointer;">SE065132</span></td>
+
+                <td>Deepanshu Tyagi</td>
+                <td>Deepanshu@gmail.com</td>
+                <td>8126362520</td>
+                <td>25/06/2021</td>
+                <td>4.5 star</td>
+                <td>1,050</td>
+                <td>02/06/2021</td>
+  
+                <td><span class="action">
+                     <a [routerLink]="['/reward-history']"><img src="assets/imgs/eye.svg" class="eye" alt="eye"></a>
+                  
+              
+                </span></td>
+              </tr>
+ 
+          </tbody>
+        </table>
+        </div>
+        <div class="paginations">
+            <div class="paginationLeft">
+                <h2>Total Rewards : <span>354865</span></h2>
+            </div>
+            <div class="paginationRight">
+                <ul>
+                    <li><a href="javascript:void(0)"><img src="assets/imgs/l.svg" alt="arrowleft"></a></li>
+                    <li><a href="javascript:void(0)"><img src="assets/imgs/arrowleft.svg" alt="arrowleft"></a></li>
+                    <li><a href="javascript:void(0)">1</a></li>
+                    <li><a href="javascript:void(0)">2</a></li>
+                    <li><a href="javascript:void(0)">3</a></li>
+                    <li><a href="javascript:void(0)">4</a></li>
+                    <li><a  href="javascript:void(0)"><img src="assets/imgs/arrowright.svg" alt="arrowright"></a></li>
+                    <li><a href="javascript:void(0)"><img src="assets/imgs/r.svg" alt="arrowleft"></a></li>
+                </ul>
+            </div>
+        </div>
+</div>
+</div>

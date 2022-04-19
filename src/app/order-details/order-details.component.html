@@ -1,0 +1,324 @@
+<app-sidebar></app-sidebar>
+<header>
+  <div class="headerInner">
+    <div class="headerAll headerAll2">
+      <div class="headerTop">
+        <div class="topLeft">
+          <ul>
+            <li>Home /</li>
+            <li  [routerLink]="['/customers']" style="cursor: pointer;">Customers /</li>
+            <li  [routerLink]="['/customers-details']" style="cursor: pointer;">Details /</li>
+            <li><a href="javascript:void(0)">Order Details</a></li>
+          </ul>
+        </div>
+        <div class="topRight">
+          <h2>Admin <span><img src="assets/imgs/profile.svg" alt="profile"></span></h2>
+          <!-- <div class="adminDetail">
+                        <ul>
+                            <li><a href="javascript:void(0)"><span><i class="fa fa-user"></i></span>Profile</a></li>
+                            <li><a href="javascript:void(0)"><span><i class="fa fa-sign-out-alt"></i></span>Logout</a></li>
+                      
+                        </ul>
+                    </div> -->
+        </div>
+      </div>
+      <h2 class="head">Order Details</h2>
+
+    </div>
+  </div>
+</header>
+
+<div class="commonall commonallup">
+<div class="orderBg">
+    <div class="customersDetails">
+      
+        <div class="profileBox orderBox">
+        <div class="orderUl">
+            <ul class="firstUl">
+                <li>
+                  <div class="prfileDE">
+                    <span>
+                      <h5>Order ID</h5>
+                      <p>SE065132</p>
+                    </span>
+                    <span>
+                      <h5>Order Rating</h5>
+                      <p>5 Star</p>
+                    </span>
+                    <span>
+                      <h5>PickUp Details</h5>
+                      <p>12/07/21, 4:38 PM</p>
+                    </span>
+                
+             
+                  </div>
+                </li>
+                <li>
+                    <div class="prfileDE">
+                      <span>
+                        <h5>Restaurant ID</h5>
+                        <p>SE065132</p>
+                      </span>
+                      <span>
+                        <h5>Restaurant Name</h5>
+                        <p>Dominos</p>
+                      </span>
+                      <span>
+                        <h5>Restaurant Location</h5>
+                        <p>Sector 63, Noida</p>
+                      </span>
+                 
+               
+                    </div>
+                  </li>
+                  <li>
+                    <div class="prfileDE">
+                      <span>
+                        <h5>Customer ID</h5>
+                        <p>SE065132</p>
+                      </span>
+                      <span>
+                        <h5>Customer Name</h5>
+                        <p>Deepanshu</p>
+                      </span>
+                      <span>
+                        <h5>Customer Location</h5>
+                        <p>Sector 63, Noida</p>
+                      </span>
+                 
+               
+                    </div>
+                  </li>
+                  <li>
+                    <div class="prfileDE">
+                      <span>
+                        <h5>Order complaint</h5>
+                        <p>Lorem Ipsum</p>
+                      </span>
+                      <span>
+                        <h5>Order Placed Time</h5>
+                        <p>12/07/2021, 4:38 PM</p>
+                      </span>
+                      <span>
+                        <h5>Order Accepted Time</h5>
+                        <p><b class="colorGreen2">12/07/2021, 4:38 PM</b> </p>
+                      </span>
+                      <span>
+                        <h5>Order Complete Time</h5>
+                        <p>12/07/2021, 4:38 PM</p>
+                      </span>
+                      <span>
+                        <h5>Order Cancelled Time</h5>
+                        <p>12/07/2021, 4:38 PM</p>
+                      </span>
+                      <span>
+                        <h5>Order No Show Time</h5>
+                        <p>12/07/2021, 4:38 PM</p>
+                      </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="prfileDE">
+                      <span>
+                        <h5>Payment Amount </h5>
+                        <p>2,000</p>
+                      </span>
+                      <span>
+                        <h5>Credits Used Amount</h5>
+                        <p>1000 </p>
+                      </span>
+              
+                    </div>
+                  </li>
+              </ul>
+              <ul class="secondUl">
+                  <li>
+                    <div class="prfileDE">
+                    <span>
+                        <h5>Status</h5>
+                        <p><a href="javascript:void(0)"  class="completed">Complete</a></p>
+                        <p>12/07/2021, 4:38 PM</p>
+                        <h5 class="refund" data-toggle="modal" data-target="#refund">Refund Amount</h5>
+                        <h5>Payment Mode</h5>
+                        <p>Cash</p>
+                      </span>
+                      </div>
+                  </li>
+              </ul>
+        </div>
+        </div>
+          
+          </div>
+        
+          <div class="customerTable">
+        <div class="excelFlex">
+            <h2 class="head">Item Details</h2>
+            <a href="javascript:void(0)"><span><i class="fa fa-file-excel"></i></span> Download Excel</a>
+      
+          </div>
+            <div class="allsearch">
+        
+        
+          <div class="tableList">
+              <div class="table-responsive scrollbar2" id="style-4">          
+                  <table class="table force-overflow2">
+                    <thead>
+                      <tr>
+                        <th>Item Images</th>
+                        <th>Item Name</th>
+                        <th>Full Price</th>
+                        <th>Discount Amount</th>
+                        <th>Qty</th>
+                        <th>Amount</th>
+                        <th>Tax @5%</th>
+                        <th>Restaurant Total</th>
+                     <th>Commission %</th>
+                     <th>Commission</th>
+                     <th>Commission(Inc Tax)</th>
+                     <th>Store Proeceds</th>
+                     <th>SaveEat Fee (Inc Tax)</th>
+                     <th>User Total</th>
+                     <th>Kgs Saved</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+          <tr>
+              <td> <span class="foodImg"><img src="assets/imgs/food.svg" alt="food"></span></td>
+              <td>Paneer Tikka</td>
+              <td>200</td>
+              <td>100</td>
+              <td>1</td>
+              <td>100</td>
+              <td>5</td>
+              <td>105</td>
+              <td>25%</td>
+              <td>25</td>
+              <td>29.5</td>
+              <td>75.50</td>
+              <td>75.50</td>
+              <td>107.48</td>
+              <td>1.2 kg</td>
+          </tr>
+          <tr>
+            <td> <span class="foodImg"><img src="assets/imgs/food.svg" alt="food"></span></td>
+            <td>Paneer Tikka</td>
+            <td>200</td>
+            <td>100</td>
+            <td>1</td>
+            <td>100</td>
+            <td>5</td>
+            <td>105</td>
+            <td>25%</td>
+            <td>25</td>
+            <td>29.5</td>
+            <td>75.50</td>
+            <td>75.50</td>
+            <td>107.48</td>
+            <td>1.2 kg</td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td><b>Total</b></td>
+          <td>400</td>
+          <td>200</td>
+          <td>2</td>
+          <td>200</td>
+          <td>-</td>
+          <td>210</td>
+          <td>-</td>
+          <td>50</td>
+          <td>58</td>
+          <td>150</td>
+          <td>-</td>
+          <td></td>
+          <td>2.4 kg</td>
+      </tr>
+                    </tbody>
+                  </table>
+                  </div>
+                  <div class="paginations">
+                      <div class="paginationLeft">
+                          <h2>Grand Total : <span>214.96</span></h2>
+                      </div>
+                      <!-- <div class="paginationRight">
+                          <ul>
+                              <li><a href="javascript:void(0)"><img src="assets/imgs/l.svg" alt="arrowleft"></a></li>
+                              <li><a href="javascript:void(0)"><img src="assets/imgs/arrowleft.svg" alt="arrowleft"></a></li>
+                              <li><a href="javascript:void(0)">1</a></li>
+                              <li><a href="javascript:void(0)">2</a></li>
+                              <li><a href="javascript:void(0)">3</a></li>
+                              <li><a href="javascript:void(0)">4</a></li>
+                              <li><a  href="javascript:void(0)"><img src="assets/imgs/arrowright.svg" alt="arrowright"></a></li>
+                              <li><a href="javascript:void(0)"><img src="assets/imgs/r.svg" alt="arrowleft"></a></li>
+                          </ul>
+                      </div> -->
+                  </div>
+          </div> 
+          </div>
+        </div>
+</div>
+</div>
+
+<div class="modalBox">
+  <div class="modal fade" id="refund" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close closedds" data-dismiss="modal"><img src="assets/imgs/cl.svg"
+            alt="cl"></button>
+      <div class="allrefund">
+        <h2 class="head">Refund Conformation</h2>
+        <form action="">
+        
+
+          <div class="form-group">
+            <label for="" class="label">Refund Reason </label>
+           <select class="form-control formControl">
+               <option value="">Refund Reason </option>
+           </select>
+        </div>
+        <div class="form-group">
+          <label for="" class="label">Refund Type </label>
+          <ul class="radioAl radioAlrefund">
+            <li>
+                <div class="form-group">
+                    <input type="radio" name="Refund" id="Amount" checked>
+                    <label for="Amount">By Amount</label>
+                </div>
+            </li>
+            <li>
+                <div class="form-group">
+                    <input type="radio" name="Refund" id="Credit">
+                    <label for="Credit">By Credit</label>
+                </div>
+            </li>
+  
+        </ul>
+          </div>
+          <div class="form-group">
+              <label for="" class="label">Refund Credit Amount</label>
+              <input type="text" class="form-control formControl border" placeholder="Refund Credit Amount">
+          </div>
+          <div class="form-group">
+            <label for="" class="label">Refund By </label>
+           <select class="form-control formControl">
+               <option value="">Refund By </option>
+               <option value="">Admin</option>
+               <option value="">Employee </option>
+           </select>
+        </div>
+       <div class="form-group sbtn">
+           <button class="btns">Submit</button>
+       </div>
+      </form>
+      </div>
+        </div>
+     
+      </div>
+      
+    </div>
+  </div>
+  
+</div>

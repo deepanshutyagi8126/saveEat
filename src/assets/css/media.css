@@ -1,0 +1,58 @@
+@media(max-width:1350px){
+    
+.staticcon ul.bd li a {
+    font-size: 12px;
+    padding: 8px 8px;
+}
+.adminCon {
+    padding-top: 165px;
+    text-align: center;
+}
+.savedCon h2 {
+    font-size: 12px;
+    color: var(--colorBlack);
+    font-weight: 600;
+}
+.savedCon p {
+    font-size: 20px;
+    color: var(--colorBlack);
+    font-weight: 300;
+    padding-top: 8px;
+}
+.saved {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 15px #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--colorWhite);
+    cursor: pointer;
+    max-width: 240px;
+    min-width: 205px;
+}
+.savedImg img {
+    width: 40px;
+    height: 40px;
+}
+.savedImg {
+    padding-left: 8px;
+}
+.rupee {
+    right: -8px;
+}
+.finacialMain {
+    padding: 15px;
+    background-color: #E7F7F8;
+    border-radius: 15px;
+    width: 260px;
+    /* min-height: 225px; */
+}
+.loginUp {
+    padding: 22px 0px;
+}
+h2.head {
+    font-size: 20px;
+}
+}

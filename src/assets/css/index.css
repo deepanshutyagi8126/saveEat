@@ -1,0 +1,74 @@
+  .finacialMain{
+    padding: 25px;
+    background-color: #E7F7F8;
+    border-radius: 15px;
+    width: 280px;
+    /* min-height: 280px; */
+  }
+  .dashBoxes{
+    margin-right: 30px;
+    display: inline-block;
+  }
+  .dashBoxes:last-child{
+      margin-right: 0;
+  }
+  .innerDashes {
+    display: flex;
+    padding-bottom: 20px;
+}
+.Alldashes {
+    margin-bottom: 25px;
+}
+
+  .apexcharts-text.apexcharts-datalabel-label{
+      font-size: 12px;
+      display: none;
+  }
+  .apexcharts-pie-label, .apexcharts-datalabels, .apexcharts-datalabel, .apexcharts-datalabel-label, .apexcharts-datalabel-value{
+      /* display: none; */
+  }
+
+  .DisFlex{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  .ar{
+      margin-left: 4px;
+  }
+
+.finacialNumber h2{
+    font-size: 22px;
+    font-weight: 600;
+}
+.finacialdropdown p{
+    color: #FF792C;
+    font-weight: 600;
+    font-size: 14px;
+}
+.finacialbottomText h5{
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.graphValue img {
+    width: 70px;
+}
+.apexcharts-datalabels-group {
+    transform: translate(0px, -25px) scale(1, 1);
+    font-weight: 600;
+}
+h2.heade{
+    font-size: 18px;
+    line-height: 35px;
+    color: var(--colorBlack);
+    font-weight: 600;
+    padding: 5px 0px;
+}
+.finacialbottom.DisFlex {
+    position: absolute;
+    bottom: 0;
+}
+.stats .col-md-4{
+    margin-bottom: 20px;
+}

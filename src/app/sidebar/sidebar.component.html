@@ -1,0 +1,117 @@
+<div class="sideBarAll">
+ <div class="logoHum">
+    <div class="logo">
+        <img src="assets/imgs/logo.png" alt="logo">
+    </div>
+    <div class="hum">
+        <img src="assets/imgs/hum.svg" alt="hum">
+    </div>
+ </div>
+    <div class="scrollbar" id="style-3">
+        <ul class="sidebar force-overflow">
+            <li [routerLinkActive]="['active']" >
+                <a [routerLink]="['/dashborad']"><span class="barImg"><img src="assets/imgs/nav1.svg" alt="nav"></span><span
+                        class="barcontent">Statistics</span></a>
+            </li>
+            <li [routerLinkActive]="['active']">
+                <a [routerLink]="['/customers']"><span class="barImg"><img src="assets/imgs/nav2.svg" alt="nav"></span><span
+                        class="barcontent">Customers</span></a>
+            </li>
+            <li [routerLinkActive]="['active']">
+                <a [routerLink]="['/restaurants']" ><span class="barImg"><img src="assets/imgs/nav3.svg" alt="nav"></span><span
+                        class="barcontent">Restaurants</span></a>
+            </li>
+            <li [routerLinkActive]="['active']">
+                <a [routerLink]="['/orders']"><span class="barImg"><img src="assets/imgs/nav4.svg" alt="nav"></span><span
+                        class="barcontent">Orders</span></a>
+            </li>
+            <li [routerLinkActive]="['active']">
+                <div class="SideAccordian">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading accordion-toggle collapsed" data-toggle="collapse"
+                                data-parent="#accordion" data-target="#collapseOne">
+                                <h4 class="panel-title">
+                                    <a href="javascript:void(0)"><span class="barImg"><img src="assets/imgs/nav5.svg"
+                                                alt="nav"></span><span class="barcontent">Finance</span></a>
+                                </h4>
+    
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse  in show">
+                                <div class="panel-body">
+                                    <ul class="innerSide">
+                                        <li [routerLinkActive]="['active']">
+                                            <a [routerLink]="['/all-transactions']"><span class="barcontent">All Transaction
+                                                    </span></a>
+                                        </li>
+                                        <li [routerLinkActive]="['active']">
+                                            <a [routerLink]="['/restaurant-transaction']"><span class="barcontent">Restaurant Transaction</span></a>
+                                        </li>
+                                        <li [routerLinkActive]="['active']">
+                                            <a [routerLink]="['/refund-transation']" ><span class="barcontent">Refund Transaction
+                                                    </span></a>
+                                        </li>
+                                        <li [routerLinkActive]="['active']">
+                                            <a [routerLink]="['/credit-transation']" ><span class="barcontent">Credit Redeemed Transactions</span></a>
+                                        </li>
+                                    </ul>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li [routerLinkActive]="['active']">
+                <a [routerLink]="['/rewards']"><span class="barImg"><img src="assets/imgs/nav6.svg" alt="nav"></span><span
+                        class="barcontent">Rewards</span></a>
+            </li>
+         
+            <li [routerLinkActive]="['active']">
+                <div class="SideAccordian">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading accordion-toggle collapsed" data-toggle="collapse"
+                                data-parent="#accordion" data-target="#collapseTwo">
+                                <h4 class="panel-title">
+                                    <a ><span class="barImg"><img src="assets/imgs/nav7.svg" alt="nav"></span><span
+                                        class="barcontent">Credits</span></a>
+                                </h4>
+    
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse  in show">
+                                <div class="panel-body">
+                                    <ul class="innerSide">
+                                        <li [routerLinkActive]="['active']">
+                                            <a [routerLink]="['/generate-credit']"><span class="barcontent">Generate Credit</span></a>
+                                        </li>
+                                        <li [routerLinkActive]="['active']">
+                                            <a [routerLink]="['/creadit-given']" ><span class="barcontent">Credit Given</span></a>
+                                        </li>
+                                  
+                                    </ul> 
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li [routerLinkActive]="['active']">
+                <a [routerLink]="['/users']" ><span class="barImg"><img src="assets/imgs/nav8.svg" alt="nav"></span><span
+                        class="barcontent">Users</span></a>
+            </li>
+            <li [routerLinkActive]="['active']">
+                <a [routerLink]="['/cuisines']" ><span class="barImg"><img src="assets/imgs/nav9.svg" alt="nav"></span><span
+                        class="barcontent">Cuisines</span></a>
+            </li>
+            <li [routerLinkActive]="['active']">
+                <a [routerLink]="['/static-content']"><span class="barImg"><img src="assets/imgs/nav10.svg" alt="nav"></span><span
+                        class="barcontent">Static Content</span></a>
+            </li>
+        </ul>
+    </div>
+ 
+</div>
+
+<app-adminbar></app-adminbar>

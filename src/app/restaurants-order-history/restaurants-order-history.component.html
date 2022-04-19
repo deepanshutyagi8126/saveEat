@@ -1,0 +1,444 @@
+<app-sidebar></app-sidebar>
+<header>
+    <div class="headerInner">
+        <div class="headerAll headerAll2">
+            <div class="headerTop">
+                <div class="topLeft">
+                    <ul>
+                        <li>Home /</li>
+                        <li><a href="javascript:void(0)">Restaurants</a></li>
+                    </ul>
+                </div>
+                <div class="topRight">
+                    <h2>Admin <span><img src="assets/imgs/profile.svg" alt="profile"></span></h2>
+                    <!-- <div class="adminDetail">
+                        <ul>
+                            <li><a href="javascript:void(0)"><span><i class="fa fa-user"></i></span>Profile</a></li>
+                            <li><a href="javascript:void(0)"><span><i class="fa fa-sign-out-alt"></i></span>Logout</a></li>
+                      
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+            <h2 class="head">Restaurant Details</h2>
+
+        </div>
+    </div>
+</header>
+
+<div class="commonall commonallup">
+    <div class="staticcon ">
+        <ul class="bd">
+            <li><a [routerLink]="['/restaurants-personal-information']">Personal Information</a></li>
+            <li><a [routerLink]="['/restaurants-menus']">Menus</a></li>
+            <li><a [routerLink]="['/restaurants-sell-items']">Sell Items</a></li>
+            <li class="active"><a [routerLink]="['/restaurants-order-history']">Order History</a></li>
+            <li><a [routerLink]="['/restaurants-employees']">Employees</a></li>
+            <!-- <li><a [routerLink]="['/restaurants-payout']">Payouts</a></li> -->
+        </ul>
+  <div class="staticUp">
+
+    <div class="allsearch alignCenter">
+        <div class="row">
+            <div class="col-sm-3">
+                <h2 class="head">Statistics</h2>
+            </div>
+            <!-- <div class="col-sm-1"></div> -->
+            <div class="col-sm-9">
+                <div class="row customerTable">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-3">
+                        <div class="selecter">
+                            <select class="form-control formControl">
+                                <option>From Date</option>
+                          
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="selecter">
+                            <select class="form-control formControl">
+                                <option>To Date</option>
+                           
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <ul class="radioAl">
+                            <li>
+                                <div class="form-group">
+                                    <input type="radio" name="data" id="today" checked>
+                                    <label for="today">Today</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group">
+                                    <input type="radio" name="data" id="Week">
+                                    <label for="Week">This Week</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group">
+                                    <input type="radio" name="data" id="Month">
+                                    <label for="Month">This Month</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="stats statcsRes" style="text-align: left;">
+        <!-- <div class="row">
+            <div class="col-md-4">
+                <h2 class="heade">Financial</h2>
+                <div class="finacialMain">
+                    <div class="finacial DisFlex">
+                        <div class="finacialNumber">
+                            <h2>234</h2>
+                        </div>
+                        <div class="finacialdropdown">
+                            <p>Gross Revenue <img src="assets/imgs/arrow.svg" alt=""></p>
+                        </div>
+                    </div>
+
+                    <div class="finacialbottom DisFlex">
+                        <div class="finacialbottomText">
+                            <h5>40% Improvement</h5>
+                        </div>
+                        <div class="finacialbottomGraph">
+                            <div id="chart">
+                                <apx-chart
+                                  [series]="chartOptions.series"
+                                  [chart]="chartOptions.chart"
+                                  [plotOptions]="chartOptions.plotOptions"
+                                  [labels]="chartOptions.labels"
+                                  [fill]="chartOptions.fill"
+                                ></apx-chart>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h2 class="heade"> Customers</h2>
+                <div class="finacialMain">
+                    <div class="finacial DisFlex">
+                        <div class="finacialNumber">
+                            <h2>234</h2>
+                        </div>
+                        <div class="finacialdropdown">
+                            <p>Total Customers <img src="assets/imgs/arrow.svg" alt=""></p>
+                        </div>
+                    </div>
+
+                    <div class="finacialbottom DisFlex">
+                        <div class="finacialbottomText">
+                            <h5>40% Improvement</h5>
+                        </div>
+                        <div class="finacialbottomGraph">
+                            <div id="chart">
+                                <apx-chart
+                                  [series]="chartOptions.series"
+                                  [chart]="chartOptions.chart"
+                                  [plotOptions]="chartOptions.plotOptions"
+                                  [labels]="chartOptions.labels"
+                                ></apx-chart>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h2 class="heade"> Restaurants</h2>
+                <div class="finacialMain">
+                    <div class="finacial DisFlex">
+                        <div class="finacialNumber">
+                            <h2>234</h2>
+                        </div>
+                        <div class="finacialdropdown">
+                            <p>Total Restaurants <img src="assets/imgs/arrow.svg" alt=""></p>
+                        </div>
+                    </div>
+
+                    <div class="finacialbottom DisFlex">
+                        <div class="finacialbottomText">
+                            <h5>40% Improvement</h5>
+                        </div>
+                        <div class="finacialbottomGraph">
+                            <div id="chart">
+                                <apx-chart
+                                  [series]="chartOptions.series"
+                                  [chart]="chartOptions.chart"
+                                  [plotOptions]="chartOptions.plotOptions"
+                                  [labels]="chartOptions.labels"
+                                ></apx-chart>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div> -->
+        <div class="Alldashes scrollbar2" id="style-4">
+            <div class="innerDashes  force-overflow2">
+              <div class="dashBoxes">
+                  <h2 class="heade">Financial</h2>
+                  <div class="finacialMain">
+                      <div class="finacial DisFlex">
+                          <div class="finacialNumber">
+                              <h2>234</h2>
+                          </div>
+                          <div class="finacialdropdown">
+                              <p>Gross Revenue <img class="ar" src="assets/imgs/ar.svg" alt=""></p>
+                          </div>
+                      </div>
+      
+                      <div class="displ DisFlex">
+                          <div class="finacialbottomText">
+                              <h5>40% Improvement</h5>
+                          </div>
+                          <div class="finacialbottomGraph">
+      
+                              <div class="graphValue">
+                                <img src="assets/imgs/circle.svg" alt="cirlce">
+                              </div>
+                   
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="dashBoxes">
+                  <h2 class="heade">Orders</h2>
+                  <div class="finacialMain">
+                      <div class="finacial DisFlex">
+                          <div class="finacialNumber">
+                              <h2>234</h2>
+                          </div>
+                          <div class="finacialdropdown">
+                              <p>Gross Revenue <img class="ar" src="assets/imgs/ar.svg" alt=""></p>
+                          </div>
+                      </div>
+      
+                      <div class="displ DisFlex">
+                          <div class="finacialbottomText">
+                              <h5>40% Improvement</h5>
+                          </div>
+                          <div class="finacialbottomGraph">
+      
+                              <div class="graphValue">
+                                <img src="assets/imgs/circle.svg" alt="cirlce">
+                              </div>
+                   
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="dashBoxes">
+                  <h2 class="heade">Items</h2>
+                  <div class="finacialMain">
+                      <div class="finacial DisFlex">
+                          <div class="finacialNumber">
+                              <h2>234</h2>
+                          </div>
+                          <div class="finacialdropdown">
+                              <p>Gross Revenue <img class="ar" src="assets/imgs/ar.svg" alt=""></p>
+                          </div>
+                      </div>
+      
+                      <div class="displ DisFlex">
+                          <div class="finacialbottomText">
+                              <h5>40% Improvement</h5>
+                          </div>
+                          <div class="finacialbottomGraph">
+      
+                              <div class="graphValue">
+                                <img src="assets/imgs/circle.svg" alt="cirlce">
+                              </div>
+                   
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="dashBoxes">
+                  <h2 class="heade">Rewards</h2>
+                  <div class="finacialMain">
+                      <div class="finacial DisFlex">
+                          <div class="finacialNumber">
+                              <h2>234</h2>
+                          </div>
+                          <div class="finacialdropdown">
+                              <p>Gross Revenue <img class="ar" src="assets/imgs/ar.svg" alt=""></p>
+                          </div>
+                      </div>
+      
+                      <div class="displ DisFlex">
+                          <div class="finacialbottomText">
+                              <h5>40% Improvement</h5>
+                          </div>
+                          <div class="finacialbottomGraph">
+      
+                              <div class="graphValue">
+                                <img src="assets/imgs/circle.svg" alt="cirlce">
+                              </div>
+                   
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="customerTable"  style="text-align: left;">
+    <h2 class="head">Order History</h2>
+    <div class="allsearch">
+  <div class="row">
+      <div class="col-sm-3">
+        <div class="searchLeft">
+            <div class="form-group Relative">
+                <span class="se"><img src="assets/imgs/search.svg" alt="search"></span>
+                <input type="text" class="form-control formControl pd-38" placeholder="Search  , Location">
+            </div>
+        </div>
+      </div>
+      <!-- <div class="col-sm-1"></div> -->
+      <div class="col-sm-9">
+          <div class="row">
+              <div class="col-sm-1"></div>
+              <div class="col-sm-3">
+                  <div class="selecter">
+                      <select class="form-control formControl">
+                          <option >From Date</option>
+                
+                      </select>
+                  </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="selecter">
+                    <select class="form-control formControl">
+                        <option >To Date</option>
+                   
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <ul class="radioAl">
+                    <li>
+                        <div class="form-group">
+                            <input type="radio" name="data" id="today" checked>
+                            <label for="today">Today</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-group">
+                            <input type="radio" name="data" id="Week">
+                            <label for="Week">This Week</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-group">
+                            <input type="radio" name="data" id="Month">
+                            <label for="Month">This Month</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+          </div>
+      </div>
+  </div>
+
+ <div class="paymentSlecter">
+ 
+<div class="selecter">
+  <select class="form-control formControl">
+      <option >Order Status</option>
+      <option >Reject</option>
+      <option >Pending</option>
+      <option >Accepted</option>
+
+  </select>
+
+</div>
+<div class="selecter">
+  <select class="form-control formControl">
+      <option >Refund Status</option>
+      <option >Refund Proceed</option>
+      <option >Refunded</option>
+
+  </select>
+
+</div>
+ </div>
+
+  <div class="tableList">
+      <div class="table-responsive scrollbar2" id="style-4">          
+          <table class="table force-overflow2">
+            <thead>
+              <tr>
+                <th>Order Date</th>
+                <th>Order ID</th>
+                <th>Customer ID</th>
+                <th>Customer name</th>
+                <th>Number</th>
+                <th>Amount</th>
+                <th>Order Status</th>
+                <th>Refund Status</th>
+             
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>25/06/2021</td>
+                    
+                    <td><span class="idcolor pointer" [routerLink]="['/order-details']" style="cursor: pointer;">SE065132</span></td>
+                    <td><span class="idcolor"  [routerLink]="['/customers-details']" style="cursor: pointer;">SE065132</span></td>
+                   
+                    <td>Deepanshu</td>
+                    <td>8126362520</td>
+                    <td>1,050</td>
+                    <td><span class="pending">pending</span></td>
+                    <td><span class="Accepted">Refund Proceed</span></td>
+                    
+                  </tr>
+              
+                  <tr>
+                    <td>25/06/2021</td>
+                    
+                    <td><span class="idcolor pointer" [routerLink]="['/order-details']" style="cursor: pointer;">SE065132</span></td>
+                    <td><span class="idcolor"  [routerLink]="['/customers-details']" style="cursor: pointer;">SE065132</span></td>
+               <td>Deepanshu</td>
+               <td>8126362520</td>
+                    <td>1,050</td>
+                    <td><span class="pending">pending</span></td>
+                    <td><span class="Accepted">Refund Proceed</span></td>
+                    
+                  </tr>
+                  
+  
+            </tbody>
+          </table>
+          </div>
+          <div class="paginations">
+              <div class="paginationLeft">
+                  <h2>Total Orders : <span>354865</span></h2>
+              </div>
+              <div class="paginationRight">
+                  <ul>
+                      <li><a href="javascript:void(0)"><img src="assets/imgs/l.svg" alt="arrowleft"></a></li>
+                      <li><a href="javascript:void(0)"><img src="assets/imgs/arrowleft.svg" alt="arrowleft"></a></li>
+                      <li><a href="javascript:void(0)">1</a></li>
+                      <li><a href="javascript:void(0)">2</a></li>
+                      <li><a href="javascript:void(0)">3</a></li>
+                      <li><a href="javascript:void(0)">4</a></li>
+                      <li><a  href="javascript:void(0)"><img src="assets/imgs/arrowright.svg" alt="arrowright"></a></li>
+                      <li><a href="javascript:void(0)"><img src="assets/imgs/r.svg" alt="arrowleft"></a></li>
+                  </ul>
+              </div>
+          </div>
+  </div> 
+  </div>
+</div>
+    </div>
+</div>

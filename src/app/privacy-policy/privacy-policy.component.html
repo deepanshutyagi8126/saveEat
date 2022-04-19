@@ -1,0 +1,65 @@
+<app-sidebar></app-sidebar>
+<header>
+    <div class="headerInner">
+        <div class="headerAll headerAll2">
+            <div class="headerTop">
+                <div class="topLeft">
+                    <ul>
+                        <li>Home /</li>
+                        <li><a href="javascript:void(0)">Static Content</a></li>
+                    </ul>
+                </div>
+                <div class="topRight">
+                    <h2>Admin <span><img src="assets/imgs/profile.svg" alt="profile"></span></h2>
+                    <!-- <div class="adminDetail">
+                        <ul>
+                            <li><a href="javascript:void(0)"><span><i class="fa fa-user"></i></span>Profile</a></li>
+                            <li><a href="javascript:void(0)"><span><i class="fa fa-sign-out-alt"></i></span>Logout</a></li>
+                      
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+            <h2 class="head">Privacy Policy</h2>
+
+        </div>
+    </div>
+</header>
+
+<div class="commonall commonallup">
+    <div class="staticcon">
+        <ul class="bd">
+            <li ><a [routerLink]="['/static-content']">About Us</a></li>
+            <li ><a [routerLink]="['/term-condition']">Terms & Conditions</a></li>
+            <li ><a [routerLink]="['/contact-us']">Contact Us</a></li>
+            <li class="active"><a [routerLink]="['/privacy-policy']">Privacy Policy</a></li>
+            <li ><a [routerLink]="['/faq']">FAQs</a></li>
+        </ul>
+        <form action="" class="aboutForm">
+            <div class="form-group">
+                <label for="" class="label">Heading</label>
+                <input type="text" class="form-control formControl border" placeholder="Heading">
+            </div>
+            <div class="form-group">
+                <a href="javascript:void(0)" class="addColor">+ Add Sub Heading</a>
+            </div>
+            <div class="form-group">
+                <label for="" class="label">Description</label>
+                <textarea class="form-control formControl border" placeholder="Description" rows="6"></textarea>
+            </div>
+            <div class="form-group">
+                <a href="javascript:void(0)" class="addColor">+ Add Heading</a>
+            </div>
+            <div class="form-group">
+                <a href="javascript:void(0)" class="addColor">+ Add Sub Heading</a>
+            </div>
+            <div class="form-group btnwidth marginzero">
+                <button class="btns">save</button>
+            </div>
+            <div class="lastUpdate">
+                <h2>Last Update : </h2>
+                <h4>05/08/21 <span class="time">11:07 am</span></h4>
+            </div>
+        </form>
+    </div>
+</div>
